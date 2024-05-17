@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+@layer components{
+
+    .bg-background-primary{
+        @apply bg-white
+    }
+
+    .bg-background-secondary{
+        @apply bg-slate-100
+    }
+
+    .bg-button-base{
+        @apply bg-transparent hover:bg-slate-200
+    }
+
+    .bg-button-important{
+        @apply bg-slate-200 hover:bg-slate-300
+    }
+
+    .row-stack{
+        @apply  flex flex-row justify-center items-center 
+    }
+
+    .col-stack{
+        @apply  flex flex-col justify-center items-center 
+    }
+}
